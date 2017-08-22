@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=0" />
+    <title>文档的标题</title>
+    <link rel="stylesheet" href="css/full.css"></link>
+    <link rel="stylesheet" href="css/code.css"></link>
+      <script src="js/typewriter.min.js"></script>  
+     <!-- <script src="js/typed.min.js"></script>  -->
+  </head>
+  <body>
+     <!-- <div class="heart heart-bg"></div>
+    <div class="heart heart-main"></div>  -->
+    <img src="images/i-miss-u.png" alt="">
+     <div id="container"></div> 
+  </body>
+   <!-- <script src="js/heart.js"></script>  -->
+  <script>
+  function repeat() {
+  typish('#container')
+    .type('/**', '<span class="note">')
+    .type('0', '<br>')
+    .type('00', '<span>')
+    .type('今天wood先生教你写代码呀', '<span class="note">')
+    .type('0', '<br>')
+    .type('00', '<span>')
+    .wait(10)
+    .type('不过会比较难哦～慢慢看哈', '<span class="note">')
+    .type('0', '<br>')
+    .type('00', '<span>')
+    .type('等下。。。', '<span class="note">') 
+    .wait(10)
+    .type('咳咳，先来个么么哒', '<span class="note">')
+    .type('0', '<br>')
+    .type('*/', '<span class="note">') 
+    .type('0', '<br>')
+    .type('function', '<span class="purple">')
+    .type('0', '<span>')
+    .type('foreverLove', '<span class="blue">')
+    .type('()', '<span class="gray">')
+    .type('0', '<span>')
+    .type('{', '<span class="gray">')
+      // 换行
+    .type('0', '<br>')
+    // 两个空格
+    .type('00', '<span>')
+      // 第一个options
+    .type('let', '<span class="purple">')
+    .type('0', '<span>')
+    .type('timerOptions', '<span class="gray">')
+    .type('0', '<span>')
+    .type('=', '<span class="blue">')
+    .type('0', '<span>')
+    .type('{', '<span class="gray">')
+    .type('0', '<br>')
+    // 四个空格
+    .type('0000', '<span>')
+    .type('boy', '<span class="gray">')
+    .type(':', '<span class="blue">')
+    .type('0', '<span>')
+    .type("'wood'", '<span class="green">')
+    .type(',', '<span class="gray">')
+    .type('0', '<br>')
+    // 珊珊
+    .type('0000', '<span>')
+    .type('girl', '<span class="gray">')
+    .type(':', '<span class="blue">')
+    .type('0', '<span>')
+    .type("'黄珊珊'", '<span class="green">')
+    .type(',', '<span class="gray">')
+    .type('0', '<br>')
+    // time
+    .type('0000', '<span>')
+    .type('start', '<span class="gray">')
+    .type(':', '<span class="blue">')
+    .type('0', '<span>')
+    .type("'2017-07-10'", '<span class="green">')
+    .type('0', '<br>')
+    .type('00', '<span>')
+    .type('}', '<span class="gray">')
+    .type('0', '<br>')
+
+      // 第二个options
+    .type('00', '<span>')
+    .type('let', '<span class="purple">')
+    .type('0', '<span>')
+    .type('heartOptions', '<span class="gray">')
+    .type('0', '<span>')
+    .type('=', '<span class="blue">')
+    .type('0', '<span>')
+    .type('{', '<span class="gray">')
+    .type('0', '<br>')
+    // 四个空格
+    .type('0000', '<span>')
+    .type('color', '<span class="gray">')
+    .type(':', '<span class="blue">')
+    .type('0', '<span>')
+    .type("'#fc2e5a'", '<span class="green heartBg">')
+    .type(',', '<span class="gray">')
+    .type('0', '<br>')
+    // width
+    .type('0000', '<span>')
+    .type('width', '<span class="gray">')
+    .type(':', '<span class="blue">')
+    .type('0', '<span>')
+    .type("'150px'", '<span class="green">')
+    .type(',', '<span class="gray">')
+    .type('0', '<br>')
+    // margin
+    .type('0000', '<span>')
+    .type('positon', '<span class="gray">')
+    .type(':', '<span class="blue">')
+    .type('0', '<span>')
+    .type("'0 auto'", '<span class="green">')
+    .type(',', '<span class="gray">')
+    .type('0', '<br>')
+     // top
+    .type('0000', '<span>')
+    .type('top', '<span class="gray">')
+    .type(':', '<span class="blue">')
+    .type('0', '<span>')
+    .type("'30%'", '<span class="green">')
+    .type(',', '<span class="gray">')
+    .type('0', '<br>')
+     // duration
+    .type('0000', '<span>')
+    .type('duration', '<span class="gray">')
+    .type(':', '<span class="blue">')
+    .type('0', '<span>')
+    .type("'0.5s'", '<span class="green">')
+    .type(',', '<span class="gray">')
+    .type('0', '<br>')
+    .type('00', '<span>')
+    .type('}', '<span class="gray">')
+    .type('0', '<br>')
+    
+    // creat new
+    .type('00', '<span>')
+    .type('let', '<span class="purple">')
+    .type('0', '<span>')
+    .type('=', '<span class="blue">')
+    .type('0', '<span>')
+    .type('new', '<span class="purple">')
+    .type('0', '<span>')
+    .type('Timer', '<span class="yellow">')
+    .type('(timerOptions)', '<span class="gray">')
+    .type('0', '<br>')
+    .type('00', '<span>')
+    .type('let', '<span class="purple">')
+    .type('0', '<span>')
+    .type('=', '<span class="blue">')
+    .type('0', '<span>')
+    .type('new', '<span class="purple">')
+    .type('0', '<span>')
+    .type('Heart', '<span class="yellow">')
+    .type('(heartOptions)', '<span class="gray">')
+    .type('0', '<br>')
+    // document.body
+    .type('00', '<span>')
+    .type('document', '<span class="red">')
+    .type('.', '<span class="gray">')
+    .type('body', '<span class="red">')
+    .type('.', '<span class="gray">')
+    .type('appendChild', '<span class="green-blue">')
+    .type('(timer)', '<span class="gray">')
+    .type('0', '<br>')
+     
+    .type('00', '<span>')
+    .type('document', '<span class="red">')
+    .type('.', '<span class="gray">')
+    .type('body', '<span class="red">')
+    .type('.', '<span class="gray">')
+    .type('appendChild', '<span class="green-blue">')
+    .type('(heart)', '<span class="gray">')
+    .type('0', '<br>')
+     
+    .type('}', '<span class="gray">')
+    
+    
+    .wait(50)
+    // .then(repeat)
+  }
+  repeat();
+</script>
+</html>
+<!--
+  换行
+  .type('0', '<br>')
+  冒号
+  .type(': ', '<span class="blue">')
+  等号
+  .type(' = ', '<span class="blue">')
+  -->
