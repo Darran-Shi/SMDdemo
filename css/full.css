@@ -1,5 +1,5 @@
 html {
-  font-size:  calc(100vh/6.67);
+  font-size: calc(100vh/6.67);
 }
 html,
 body {
@@ -18,7 +18,6 @@ span {
   font-size: 0.16rem;
 	display: inline-block;
 }
-
 .heart {
   position: absolute;
   width: 100px;
@@ -56,7 +55,10 @@ span {
 }
 
 .heart-main {
-  animation: pounding .5s linear infinite alternate;
+  animation:pounding .5s linear infinite alternate;
+}
+.show {
+  animation: a-show 5s linear;
 }
 
 @keyframes pounding {
@@ -65,6 +67,14 @@ span {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes a-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -86,16 +96,22 @@ span {
     transform: scale(50);
   }
 }
-.lip-container {
+/* 动画展示区域(红色区域)  */
+.board {
   width: 100%;
   height: 100%;
   position: absolute;
-  left: 0;
-	background-color: #f88;
+  right: calc(-100vw - 10px);
+	background: rgb(40, 44, 52);
   top: 0;
+  border-left: 10px solid #f5deb3;
+  transition: right 2s;
+  -moz-transition: right 2s; /* Firefox 4 */
+  -webkit-transition: right 2s; /* Safari 和 Chrome */
+  -o-transition: right 2s; /* Opera */
 }
 .lip {
-  animation: a-lip 4.5s linear forwards infinite;
+  animation: a-lip 2.5s linear forwards 1;
   position: absolute;
   left: 0;
   top: 127px;
