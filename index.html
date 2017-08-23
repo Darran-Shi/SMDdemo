@@ -13,7 +13,10 @@
      <!-- <div class="heart heart-bg"></div>
     <div class="heart heart-main"></div>  -->
     <!-- <img src="images/i-miss-u.png" alt=""> -->
-     <div id="container"></div> 
+     <div id="container"></div>
+     <div class="lip-container">
+       <div class="lip"></div>
+     </div>
   </body>
    <!-- <script src="js/heart.js"></script>  -->
   <script>
@@ -26,12 +29,12 @@
     .type('0', '<br>')
     .type('00', '<span class="blank">')
     .wait(10)
-    .type('不过会比较难哦～慢慢看哈', '<span class="note">')
-    .type('0', '<br>')
-    .type('00', '<span class="blank">')
     .type('等下。。。', '<span class="note">') 
     .wait(10)
-    .type('咳咳，先来个么么哒', '<span class="note">')
+    .type('先来个么么哒 o(*≧▽≦)ツ', '<span class="note">')
+    .then(() => {
+      
+     })
     .type('0', '<br>')
     .type('*/', '<span class="note">') 
     .type('0', '<br>')
@@ -60,6 +63,9 @@
     .type(':', '<span class="blue">')
     .type('0', '<span class="blank">')
     .type("'wood'", '<span class="green">')
+    .wait(15)
+    .del(6)
+    .type("'洪榕森'", '<span class="green">')
     .type(',', '<span class="gray">')
     .type('0', '<br>')
     // 珊珊
@@ -176,7 +182,9 @@
     .type('0', '<br>')
      
     .type('}', '<span class="gray">')
-    
+    .type('0', '<br>')
+    .type('foreverLove', '<span class="blue">')
+    .type('()', '<span class="gray">')
     
     .wait(50)
     // .then(repeat)
