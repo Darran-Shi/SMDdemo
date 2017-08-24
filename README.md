@@ -10,3 +10,9 @@ Refer to: <a href="https://github.com/hackerzhou/Love">hackerzhou</a>
 送女票的七夕礼物。
 
 创意部分参考 <a href="https://github.com/hackerzhou/Love">hackerzhou</a>
+
+## TODO
+
+* rewrite type-writer
+* minify
+
