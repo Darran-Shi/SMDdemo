@@ -1,0 +1,217 @@
+.stars {
+  width: calc(100vw/12);
+  position: absolute;
+  top: -50px; }
+
+.stars:nth-child(1) {
+  left: 71vw;
+  animation: 4s drop1 linear forwards 3.55293s; }
+
+.stars:nth-child(2) {
+  left: 83vw;
+  animation: 4s drop2 linear forwards 5.30918s; }
+
+.stars:nth-child(3) {
+  left: 7vw;
+  animation: 5s drop3 linear forwards 3.21963s; }
+
+.stars:nth-child(4) {
+  left: 90vw;
+  animation: 3s drop4 linear forwards 3.33144s; }
+
+.stars:nth-child(5) {
+  left: 82vw;
+  animation: 5s drop5 linear forwards 1.32066s; }
+
+.stars:nth-child(6) {
+  left: 51vw;
+  animation: 4s drop6 linear forwards 4.94801s; }
+
+.stars:nth-child(7) {
+  left: 12vw;
+  animation: 3s drop7 linear forwards 3.24674s; }
+
+.stars:nth-child(8) {
+  left: 87vw;
+  animation: 6s drop8 linear forwards 1.00328s; }
+
+.stars:nth-child(9) {
+  left: 89vw;
+  animation: 3s drop9 linear forwards 4.3552s; }
+
+.stars:nth-child(10) {
+  left: 94vw;
+  animation: 5s drop10 linear forwards 1.17758s; }
+
+.stars:nth-child(11) {
+  left: 44vw;
+  animation: 7s drop11 linear forwards 4.97576s; }
+
+.stars:nth-child(12) {
+  left: 31vw;
+  animation: 3s drop12 linear forwards 3.30454s; }
+
+.stars:nth-child(13) {
+  left: 18vw;
+  animation: 6s drop13 linear forwards 4.01152s; }
+
+.stars:nth-child(14) {
+  left: 29vw;
+  animation: 5s drop14 linear forwards 5.51081s; }
+
+.stars:nth-child(15) {
+  left: 37vw;
+  animation: 6s drop15 linear forwards 4.81817s; }
+
+.stars:nth-child(16) {
+  left: 97vw;
+  animation: 4s drop16 linear forwards 4.58246s; }
+
+.stars:nth-child(17) {
+  left: 86vw;
+  animation: 7s drop17 linear forwards 4.70059s; }
+
+.stars:nth-child(18) {
+  left: 15vw;
+  animation: 7s drop18 linear forwards 5.67991s; }
+
+.stars:nth-child(19) {
+  left: 61vw;
+  animation: 5s drop19 linear forwards 5.01702s; }
+
+.stars:nth-child(20) {
+  left: 19vw;
+  animation: 7s drop20 linear forwards 3.36249s; }
+
+.stars:nth-child(21) {
+  left: 80vw;
+  animation: 6s drop21 linear forwards 2.86988s; }
+
+.stars:nth-child(22) {
+  left: 68vw;
+  animation: 4s drop22 linear forwards 2.32422s; }
+
+.stars:nth-child(23) {
+  left: 71vw;
+  animation: 6s drop23 linear forwards 1.42623s; }
+
+.stars:nth-child(24) {
+  left: 17vw;
+  animation: 6s drop24 linear forwards 3.06018s; }
+
+.stars:nth-child(25) {
+  left: 100vw;
+  animation: 6s drop25 linear forwards 0.73887s; }
+
+.stars:nth-child(26) {
+  left: 32vw;
+  animation: 5s drop26 linear forwards 0.95795s; }
+
+.stars:nth-child(27) {
+  left: 46vw;
+  animation: 7s drop27 linear forwards 5.03835s; }
+
+.stars:nth-child(28) {
+  left: 91vw;
+  animation: 5s drop28 linear forwards 5.50133s; }
+
+.stars:nth-child(29) {
+  left: 15vw;
+  animation: 3s drop29 linear forwards 4.35109s; }
+
+.stars:nth-child(30) {
+  left: 39vw;
+  animation: 4s drop30 linear forwards 1.57618s; }
+
+@keyframes drop1 {
+  100% {
+    transform: translateY(110vh) translateX(38vw); } }
+@keyframes drop2 {
+  100% {
+    transform: translateY(110vh) translateX(-41vw); } }
+@keyframes drop3 {
+  100% {
+    transform: translateY(110vh) translateX(-15vw); } }
+@keyframes drop4 {
+  100% {
+    transform: translateY(110vh) translateX(28vw); } }
+@keyframes drop5 {
+  100% {
+    transform: translateY(110vh) translateX(-20vw); } }
+@keyframes drop6 {
+  100% {
+    transform: translateY(110vh) translateX(-17vw); } }
+@keyframes drop7 {
+  100% {
+    transform: translateY(110vh) translateX(16vw); } }
+@keyframes drop8 {
+  100% {
+    transform: translateY(110vh) translateX(50vw); } }
+@keyframes drop9 {
+  100% {
+    transform: translateY(110vh) translateX(19vw); } }
+@keyframes drop10 {
+  100% {
+    transform: translateY(110vh) translateX(21vw); } }
+@keyframes drop11 {
+  100% {
+    transform: translateY(110vh) translateX(17vw); } }
+@keyframes drop12 {
+  100% {
+    transform: translateY(110vh) translateX(49vw); } }
+@keyframes drop13 {
+  100% {
+    transform: translateY(110vh) translateX(46vw); } }
+@keyframes drop14 {
+  100% {
+    transform: translateY(110vh) translateX(-38vw); } }
+@keyframes drop15 {
+  100% {
+    transform: translateY(110vh) translateX(40vw); } }
+@keyframes drop16 {
+  100% {
+    transform: translateY(110vh) translateX(26vw); } }
+@keyframes drop17 {
+  100% {
+    transform: translateY(110vh) translateX(4vw); } }
+@keyframes drop18 {
+  100% {
+    transform: translateY(110vh) translateX(-48vw); } }
+@keyframes drop19 {
+  100% {
+    transform: translateY(110vh) translateX(-40vw); } }
+@keyframes drop20 {
+  100% {
+    transform: translateY(110vh) translateX(43vw); } }
+@keyframes drop21 {
+  100% {
+    transform: translateY(110vh) translateX(-7vw); } }
+@keyframes drop22 {
+  100% {
+    transform: translateY(110vh) translateX(48vw); } }
+@keyframes drop23 {
+  100% {
+    transform: translateY(110vh) translateX(-8vw); } }
+@keyframes drop24 {
+  100% {
+    transform: translateY(110vh) translateX(29vw); } }
+@keyframes drop25 {
+  100% {
+    transform: translateY(110vh) translateX(38vw); } }
+@keyframes drop26 {
+  100% {
+    transform: translateY(110vh) translateX(-9vw); } }
+@keyframes drop27 {
+  100% {
+    transform: translateY(110vh) translateX(-23vw); } }
+@keyframes drop28 {
+  100% {
+    transform: translateY(110vh) translateX(29vw); } }
+@keyframes drop29 {
+  100% {
+    transform: translateY(110vh) translateX(30vw); } }
+@keyframes drop30 {
+  100% {
+    transform: translateY(110vh) translateX(36vw); } }
+
+/*# sourceMappingURL=st.css.map */
