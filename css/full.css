@@ -54,12 +54,12 @@ span {
 	transform: rotate(45deg);
 	transform-origin: 100% 100%;
 }
-.heart-bg {
+/* .heart-bg {
   animation: heart-anim 1s linear .4s infinite;
 }
 .heart-bg:before,.heart-after {
 	background-color: #ff7693;
-}
+} */
 
 .heart-main {
   animation:pounding .5s linear infinite alternate;
@@ -85,7 +85,7 @@ span {
   }
 }
 
-@keyframes heart-anim {
+/* @keyframes heart-anim {
   46% {
     transform: scale(1);
   }
@@ -102,7 +102,7 @@ span {
     opacity: 0;
     transform: scale(50);
   }
-}
+} */
 #timer {
   position: absolute;
   width: 100%;

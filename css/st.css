@@ -1,7 +1,7 @@
 .stars {
   width: calc(100vw/12);
   position: absolute;
-  top: -50px; }
+  top: calc(-100vw/12); }
 
 .stars:nth-child(1) {
   left: 71vw;
