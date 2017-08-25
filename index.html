@@ -6,25 +6,36 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/full.css"></link>
     <link rel="stylesheet" href="css/code.css"></link>
+    <link rel="stylesheet" href="css/st.css"></link>
+    <link rel="stylesheet" href="css/cursor.css"></link>
     <script src="js/typewriter.min.js"></script>
-    <script src="js/timer.js"></script>
+    <script src="js/countUp.min.js"></script>
   </head>
   <body>
-    <!-- <div class="heart heart-bg"></div>
-    <div class="heart heart-main"></div> -->
-    <!-- <img src="images/i-miss-u.png" alt=""> -->
-    <div id="container"></div>
+    <!-- <div id="typer"></div> -->
+    <!-- <div id="heartMain" class="heart heart-main"></div> -->
+
     <div id="board" class="board">
-      <div id="showArea"></div>
-    </div> 
+      <div id="showArea">
+        <div id="heartBg" class="heart heart-bg" style="display: none"></div>
+        <div id="heartMain" class="heart heart-main" style="display: none"></div>
+        <div id="timer" style="display: none">
+          <span id="count"></span>
+          <span>days</span>
+        </div>
+      </div>
+    </div>     
   </body>
-   <!-- <script src="js/heart.js"></script>  -->
   <script>
   window.onload = () => {
-    repeat();
+    transBoard('show', () => {
+          foreverLove()
+        })
+    // go();
+    starts()
   }
-  function repeat() {
-    typish('#container')
+  function go() {
+    typish('#typer')
       .type('/**', '<span class="note">')
       .type('0', '<br>')
       .type('00', '<span class="blank">')
@@ -120,7 +131,7 @@
       .type('0', '<br>')
       // margin
       .type('0000', '<span class="blank">')
-      .type('position', '<span class="gray">')
+      .type('margin', '<span class="gray">')
       .type(':', '<span class="blue">')
       .type('0', '<span class="blank">')
       .type("'0 auto'", '<span class="green">')
@@ -198,10 +209,11 @@
       .then(() => {
         transBoard('show', () => {
           foreverLove()
-        });
+        })
       })
-      
-      // .then(repeat)
+      .wait(120)
+      .then(() => {
+      })
   }
 
   function memeda() {
@@ -210,7 +222,7 @@
     document.body.appendChild(lip);
     setTimeout(() => {
       lip.remove()
-    }, 2500);
+    }, 2500)
   }
   function transBoard(type, cb) {
     let board = document.querySelector('.board')
@@ -224,23 +236,49 @@
     }, 2000)
   }
   function foreverLove() {
-    let board = document.querySelector('.board')
     let showArea = document.querySelector('#showArea')
+    let heartBg = document.querySelector('#heartBg')
+    let heartMain = document.querySelector('#heartMain')
     showArea.className = 'show'
-    let heart = document.createElement('div')
-    let heartBg = document.createElement('div')
-    heart.className = 'heart heart-bg'
-    heartBg.className = 'heart heart-main'
-    showArea.appendChild(heart)
-    showArea.appendChild(heartBg)
+    heartBg.style.display = 'block'
+    heartMain.style.display = 'block'
+    setTimeout(() => {
+      count()
+    }, 2000)
   }
-</script>
+  function count() {
+    const date = new Date('2017-07-10 00:00:00')
+    let current = Date()
+    let seconds = (Date.parse(current) - Date.parse(date)) / 1000;
+    let days = Math.floor(seconds / (3600 * 24))
+  //   seconds = seconds % (3600 * 24);
+  //   let hours = Math.floor(seconds / 3600);
+  //   if (hours < 10) {
+  //       hours = "0" + hours;
+  //   }
+  //   seconds = seconds % 3600;
+  //   let minutes = Math.floor(seconds / 60);
+  //   if (minutes < 10) {
+  //       minutes = "0" + minutes;
+  //   }
+  //   seconds = seconds % 60;
+  //   if (seconds < 10) {
+  //       seconds = "0" + seconds;
+  //   }
+  //   console.log(days, hours, minutes, seconds)
+    let timer = document.querySelector('#timer')
+    timer.style.display = 'block'
+    let numAnim = new CountUp("count", 0, days, 0, 5)
+    numAnim.start()
+  }
+  function starts() {
+    let board = document.querySelector('.board')
+    for (let i = 0; i < 30; i++) {
+      let img = document.createElement('img')
+      img.setAttribute('src', 'images/i-miss-u.png')
+      img.setAttribute('class', 'stars')
+      board.appendChild(img)
+    }
+  }
+</script> 
 </html>
-<!--
-  换行
-  .type('0', '<br>')
-  冒号
-  .type(': ', '<span class="blue">')
-  等号
-  .type(' = ', '<span class="blue">')
-  -->
