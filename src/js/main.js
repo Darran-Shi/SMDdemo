@@ -225,7 +225,7 @@
     startsContainer.className = 'startsContainer'
     for (let i = 0; i < 30; i++) {
       let img = document.createElement('img')
-      img.setAttribute('src', 'images/i-miss-u.png')
+      img.setAttribute('src', 'src/images/i-miss-u.png')
       img.setAttribute('class', 'stars')
       startsContainer.appendChild(img)
     }
