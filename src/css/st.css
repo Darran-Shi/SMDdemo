@@ -29,11 +29,11 @@
 
 .stars:nth-child(7) {
   left: 12vw;
-  animation: 3s drop7 linear forwards 3.24674s; }
+  animation: 3s drop7 linear forwards 0.94674s; }
 
 .stars:nth-child(8) {
   left: 87vw;
-  animation: 6s drop8 linear forwards 1.00328s; }
+  animation: 6s drop8 linear forwards 0s; }
 
 .stars:nth-child(9) {
   left: 89vw;
@@ -41,7 +41,7 @@
 
 .stars:nth-child(10) {
   left: 94vw;
-  animation: 5s drop10 linear forwards 1.17758s; }
+  animation: 5s drop10 linear forwards 0.37758s; }
 
 .stars:nth-child(11) {
   left: 44vw;
