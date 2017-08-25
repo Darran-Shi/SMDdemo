@@ -1,4 +1,4 @@
-#container:after {
+#typer:after {
   content: '';
   display: inline-block;
   vertical-align: baseline;
@@ -10,7 +10,7 @@
   top: 2px;
   -webkit-animation: typish-blink 500ms linear infinite;
   animation: typish-blink 500ms linear infinite; }
-#container.-nocursor:after {
+#typer.-nocursor:after {
   display: none; }
 
 @-webkit-keyframes typish-blink {
