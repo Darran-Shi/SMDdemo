@@ -208,13 +208,15 @@
   function foreverLove() {
     let showArea = document.querySelector('#showArea')
     // let heartBg = document.querySelector('#heartBg')
-    let heartMain = document.querySelector('#heartMain')
-    heartMain.addEventListener('click', () => {
+    let foot = document.querySelector('.foot')
+    let send = document.querySelector('#send')
+    send.addEventListener('click', () => {
       stars()
     })
     showArea.className = 'show'
     // heartBg.style.display = 'block'
     heartMain.style.display = 'block'
+    foot.style.display = 'block'
     setTimeout(() => {
       count()
     }, 2000)
@@ -230,6 +232,11 @@
     numAnim.start()
   }
   function stars() {
+    let send = document.querySelector('#send')
+    send.setAttribute('disabled', '')
+    setTimeout(() => {
+      send.removeAttribute('disabled')
+    }, 2000)
     let max = 5
     let startsContainer = document.createElement('div')
     startsContainer.className = 'startsContainer'
@@ -240,6 +247,23 @@
       img.setAttribute('class', 'stars')
       startsContainer.appendChild(img)
     }
+    let comments = document.querySelectorAll('.comment')
+    let comentsLength = 0
+    if (comments) {
+      comentsLength = comments.length
+      if (comentsLength > 7) {
+        for(let i = 0; i < comentsLength; i++) {
+          comments[i].remove()
+        }
+        comentsLength = 0
+      }
+    }
+    let comment = document.createElement('div')
+    comment.className = 'comment'
+    comment.style.bottom = 80 + comentsLength * 55 + 'px'
+    comment.innerHTML = '我想你了'
+    document.body.appendChild(comment)
+    
     document.body.appendChild(startsContainer)
     let els = document.querySelectorAll('.startsContainer')
     let current = els.length
