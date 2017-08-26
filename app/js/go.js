@@ -197,11 +197,13 @@
   function transBoard(type, cb) {
     let board = document.querySelector('.board')
     board.style.display = 'block'
-    if (!type || type === 'hide') {
-      board.style.right = 'calc(-100vw - 10px)'
-    } else {
-      board.style.right = '0'
-    }
+    setTimeout(() => {
+      if (!type || type === 'hide') {
+        board.style.right = 'calc(-100vw - 10px)'
+      } else {
+        board.style.right = '0'
+      }
+    }, 30);
     setTimeout(() => {
       cb && cb()
     }, 2000)
