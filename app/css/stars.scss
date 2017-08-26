@@ -1,0 +1,18 @@
+.stars {
+  width: calc(100vw/12);
+  position: absolute;
+  top: calc(-100vw/12);
+}
+@for $i from 1 through 30 {
+  .stars:nth-child(#{$i}){
+    left: #{(5 + random(95))}vw;
+    animation: #{(random(5) + 2)}s drop#{$i} linear forwards random()*6#{s};
+  }
+}
+@for $i from 1 through 30 {
+  @keyframes drop#{$i} {
+    100% {
+      transform: translateY(calc(100vh + (100vw/12))) translateX(#{(random(100)-50)}#{vw})
+    }
+  }
+}
