@@ -9,9 +9,6 @@
   img2.setAttribute('src', s2)
 
   function go() {
-        transBoard('show', () => {
-          foreverLove()
-        })
     typish('#typer')
       .type('/**', '<span class="note">')
       .type('0', '<br>')
