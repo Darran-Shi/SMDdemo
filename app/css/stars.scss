@@ -10,6 +10,12 @@
   -o-animation: #{$str};
   animation: #{$str};      
 }
+@mixin transform($str) {
+  -webkit-: #{$str};
+  -moz-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
 .stars {
   width: calc(100vw/12);
   position: absolute;
@@ -24,7 +30,7 @@
 @for $i from 1 through 30 {
   @include keyframes(drop#{$i}) {
     100% {
-      transform: translateY(calc(100vh + (100vw/12))) translateX(#{(random(100)-50)}#{vw})
+      @include transform(translateY(calc(100vh + (100vw/12))) translateX(#{(random(100)-50)}#{vw}))
     }
   }
 }
