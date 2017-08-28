@@ -5,16 +5,16 @@
   @keyframes #{$name} { @content; }
 }
 @mixin animation($str) {
-  -webkit-: #{$str};
+  -webkit-animation: #{$str};
   -moz-animation: #{$str};
   -o-animation: #{$str};
   animation: #{$str};      
 }
 @mixin transform($str) {
-  -webkit-: #{$str};
-  -moz-animation: #{$str};
-  -o-animation: #{$str};
-  animation: #{$str};      
+  -webkit-transform: #{$str};
+  -moz-transform: #{$str};
+  -o-transform: #{$str};
+  transform: #{$str};      
 }
 .stars {
   width: calc(100vw/12);
