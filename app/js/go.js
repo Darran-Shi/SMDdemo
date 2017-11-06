@@ -1,7 +1,5 @@
   import typish from './typewriter.js'
   import CountUp from 'countup.js'
-  // ex_love
-  if (window.location.href.indexOf('#ex_love') === -1) window.location.href += '/#ex_love'
   // preload
   let s1 = require('../images/i-miss-u.png')
   let s2 = require('../images/lips.svg')
@@ -228,8 +226,8 @@
   }
   function count() {
     const date = new Date('2017-07-10 00:00:00')
-    let end = new Date('2017-11-04 00:00:00')
-    let seconds = (Date.parse(end) - Date.parse(date)) / 1000;
+    let current = Date()
+    let seconds = (Date.parse(current) - Date.parse(date)) / 1000;
     let days = Math.floor(seconds / (3600 * 24))
     let timer = document.querySelector('#timer')
     timer.style.display = 'block'
