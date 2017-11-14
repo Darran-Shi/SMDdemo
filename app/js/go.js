@@ -226,8 +226,9 @@
   }
   function count() {
     const date = new Date('2017-07-10 00:00:00')
-    let current = Date()
-    let seconds = (Date.parse(current) - Date.parse(date)) / 1000;
+    // let end = Date()
+    let end = new Date('2017-11-14 12:00:00')
+    let seconds = (Date.parse(end) - Date.parse(date)) / 1000
     let days = Math.floor(seconds / (3600 * 24))
     let timer = document.querySelector('#timer')
     timer.style.display = 'block'
