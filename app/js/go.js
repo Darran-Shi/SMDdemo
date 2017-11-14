@@ -22,7 +22,7 @@
       .type('么么哒~o(*≧▽≦)ツ', '<span class="note">', 0)
       .wait(10)
       .then(() => {
-        memeda();
+        memeda()
        })
       .wait(25)
       .type('0', '<br>')
