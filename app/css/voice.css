@@ -1,0 +1,68 @@
+#birthday {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(40, 44, 52);
+  top: 0;
+  left: 0;
+}
+#audio {
+  display: none;
+}
+.voice-time {
+  color: #999;
+  font-size: 14px;
+  bottom: 55px;
+  position: absolute;
+  right: 140px;
+}
+#voice {
+  /* display: none; */
+}
+.voice {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 6px;
+  right: 10px;
+}
+.bottom-msg {
+  bottom: 50px;
+}
+#voice_white {
+   display: none; 
+}
+#voice_white img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  animation:voice 1s infinite;
+  -moz-animation:voice 1s infinite; /* Firefox */
+  -webkit-animation:voice 1s infinite; /* Safari and Chrome */
+  -o-animation:voice 1s infinite; /* Opera */
+}
+@keyframes voice
+{
+  from {clip: rect(0px, 20px, 20px, 20px);}
+  to {clip: rect(0px, 20px, 20px, 0px);}
+}
+
+@-moz-keyframes voice
+{
+  from {clip: rect(0px, 20px, 20px, 20px);}
+  to {clip: rect(0px, 20px, 20px, 0px);}
+}
+
+@-webkit-keyframes voice 
+{
+  from {clip: rect(0px, 20px, 20px, 20px);}
+  to {clip: rect(0px, 20px, 20px, 0px);}
+}
+
+@-o-keyframes voice
+{
+  from {clip: rect(0px, 20px, 20px, 20px);}
+  to {clip: rect(0px, 20px, 20px, 0px);}
+}
