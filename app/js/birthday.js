@@ -1,10 +1,20 @@
 function go() {
+  let vt = document.getElementById('voice_time')
+  let hb = document.getElementById('hb')
+  let voice = document.getElementById('voice')
+  vt.style.display = 'inline-block';
+  voice.style.display = 'block';
+  hb.style.display = 'block';
+  vt.setAttribute('class', 'voice-time show')
+  hb.setAttribute('class', 'show')
+  voice.setAttribute('class', 'comment bottom-msg show')
+  
+
   let canClick = true
   let audio = document.getElementById('audio')
   let audioSrc = require('../music/test.mp3')
   audio.setAttribute('src', audioSrc)
 
-  let voice = document.getElementById('voice')
   let img = document.createElement('img')
   let src = require('../images/voice.png')
   img.setAttribute('src', src)

@@ -1,13 +1,3 @@
-function main() {
-  document.getElementById('birthday').style.display = 'block';
-  draw();
-  require.ensure([], function(require) {
-    const b = require('./birthday.js');
-    window.onload = () => {
-      b.go();
-    }
-  }, 'birthday');
-}
 function draw() {
     // document.getElementById('bizcocho_1').setAttribute('values', ``)
     // document.getElementById('bizcocho_1').setAttribute('values', ``)
@@ -151,4 +141,4 @@ function draw() {
 	c-7.606-0.447-6.058-37.895-20.62-23.333c-10.167,10.166-15.972-0.747-25,12C119.547,443.568,121.798,416.515,111.547,415.233z
                           `)
 }
-export { main }
+export { draw }

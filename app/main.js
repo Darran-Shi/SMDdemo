@@ -20,6 +20,13 @@ if (!years) {
 
   require.ensure([], function(require) {
     const c = require('./js/cake.js');
-    c.main();
-  }, 'cake');
+    const b = require('./js/birthday.js');
+    window.onload = () => {
+     document.getElementById('birthday').style.display = 'block';
+     c.draw();
+     window.setTimeout(() => {
+      b.go();
+     }, 6000)
+    }
+  }, 'birthday');
 }
