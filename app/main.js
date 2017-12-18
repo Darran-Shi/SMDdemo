@@ -20,6 +20,6 @@ if (!years) {
 
   require.ensure([], function(require) {
     const c = require('./js/cake.js');
-    c.draw();
+    c.main();
   }, 'cake');
 }

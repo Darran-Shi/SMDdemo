@@ -1,11 +1,14 @@
-function draw() {
-    require.ensure([], function(require) {
-      const b = require('./birthday.js');
-    }, 'birthday');
-    document.getElementById('birthday').style.display = 'block';
+function main() {
+  document.getElementById('birthday').style.display = 'block';
+  drag();
+  require.ensure([], function(require) {
+    const b = require('./birthday.js');
     window.onload = () => {
-     b.go();
+      b.go();
     }
+  }, 'birthday');
+}
+function draw() {
     // document.getElementById('bizcocho_1').setAttribute('values', ``)
     // document.getElementById('bizcocho_1').setAttribute('values', ``)
     document.getElementById('bizcocho_3Path').setAttribute('d', `M173.667-13.94c-49.298,0-102.782,0-147.334,0c-3.999,0-4-16.002,0-16.002
@@ -148,4 +151,4 @@ function draw() {
 	c-7.606-0.447-6.058-37.895-20.62-23.333c-10.167,10.166-15.972-0.747-25,12C119.547,443.568,121.798,416.515,111.547,415.233z
                           `)
 }
-export { draw }
+export { main }
