@@ -1,6 +1,6 @@
 function main() {
   document.getElementById('birthday').style.display = 'block';
-  drag();
+  draw();
   require.ensure([], function(require) {
     const b = require('./birthday.js');
     window.onload = () => {
