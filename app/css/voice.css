@@ -30,7 +30,7 @@
   bottom: 50px;
 }
 #voice_white {
-   display: none; 
+  display: none; 
 }
 #voice_white img {
   width: 20px;
@@ -45,24 +45,24 @@
 }
 @keyframes voice
 {
-  from {clip: rect(0px, 20px, 20px, 20px);}
-  to {clip: rect(0px, 20px, 20px, 0px);}
+  from {clip: rect(0px 20px 20px 20px);}
+  to {clip: rect(0px 20px 20px 0px);}
 }
 
 @-moz-keyframes voice
 {
-  from {clip: rect(0px, 20px, 20px, 20px);}
-  to {clip: rect(0px, 20px, 20px, 0px);}
+  from {clip: rect(0px 20px 20px 20px);}
+  to {clip: rect(0px 20px 20px 0px);}
 }
 
 @-webkit-keyframes voice 
 {
-  from {clip: rect(0px, 20px, 20px, 20px);}
-  to {clip: rect(0px, 20px, 20px, 0px);}
+  from {clip: rect(0px 20px 20px 20px);}
+  to {clip: rect(0px 20px 20px 0px);}
 }
 
 @-o-keyframes voice
 {
-  from {clip: rect(0px, 20px, 20px, 20px);}
-  to {clip: rect(0px, 20px, 20px, 0px);}
+  from {clip: rect(0px 20px 20px 20px);}
+  to {clip: rect(0px 20px 20px 0px);}
 }
