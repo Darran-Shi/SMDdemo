@@ -1,5 +1,7 @@
 function draw() {
-    const b = require('./birthday.js');
+    require.ensure([], function(require) {
+      const b = require('./birthday.js');
+    }, 'birthday');
     document.getElementById('birthday').style.display = 'block';
     window.onload = () => {
      b.go();
