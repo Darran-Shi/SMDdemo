@@ -11,9 +11,10 @@ var isPro = process.env.NODE_ENV === 'pro' ? true : false
 module.exports = {
   entry:  __dirname + '/app/main.js',
   output: {
-    path: __dirname + '/public',
+    path: path.resolve(__dirname + '/public'),
     publicPath: isPro ? './public/' : '',
-    filename: 'bundle.js'
+    filename: 'js/[name].js',
+    chunkFilename: 'js/async/[name].js'
   },
   devServer: {
     contentBase: './public',
@@ -76,6 +77,13 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.mp3(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          name: 'music/[name].[ext]'
+        }
       }
     ]
   },
