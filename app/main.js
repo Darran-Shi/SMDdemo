@@ -16,12 +16,10 @@ if (!years) {
   document.getElementById('typer').remove();
   document.getElementById('board').remove();
   require('./css/voice.css');
+  require('./css/birthday.scss');
 
   require.ensure([], function(require) {
-    const b = require('./js/birthday.js');
-    window.onload = () => {
-     document.getElementById('birthday').style.display = 'block';
-     b.go();
-    }
+    const c = require('./js/cake.js');
+    c.draw();
   }, 'birthday');
 }
