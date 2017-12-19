@@ -35,6 +35,9 @@ function go() {
       setTimeout(() => {
         cakes()
       }, 8000)
+      setTimeout(() => {
+        cakes()
+      }, 16000)
       audio.addEventListener('ended', () => {
         voice.style.display = 'block'
         voiceWhite.style.display = 'none'
