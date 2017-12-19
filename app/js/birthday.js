@@ -32,6 +32,9 @@ function go() {
       canClick = false
       audio.play()
       cakes()
+      setTimeout(() => {
+        cakes()
+      }, 8000)
       audio.addEventListener('ended', () => {
         voice.style.display = 'block'
         voiceWhite.style.display = 'none'
@@ -46,8 +49,23 @@ function cakes() {
   let startsContainer = document.createElement('div')
   startsContainer.className = 'startsContainer'
   for (let i = 0; i < 30; i++) {
+    let w = parseInt(Math.random()*4,10)
+    let src
+    switch(w) {
+      case 0:
+        src = require('../images/cake.png')
+        break;
+      case 1:
+        src = require('../images/gift.png')
+        break;
+      case 2:
+        src = require('../images/bell.png')
+        break;
+      case 3:
+        src = require('../images/snow.png')
+        break;
+    }
     let img = document.createElement('img')
-    let src = require('../images/cake.png')
     img.setAttribute('src', src)
     img.setAttribute('class', 'stars')
     startsContainer.appendChild(img)
