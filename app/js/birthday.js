@@ -12,7 +12,7 @@ function go() {
 
   let canClick = true
   let audio = document.getElementById('audio')
-  let audioSrc = require('../music/test.mp3')
+  let audioSrc = require('../music/hb.mp3')
   audio.setAttribute('src', audioSrc)
 
   let img = document.createElement('img')
@@ -31,6 +31,7 @@ function go() {
     if (canClick) {
       canClick = false
       audio.play()
+      cakes()
       audio.addEventListener('ended', () => {
         voice.style.display = 'block'
         voiceWhite.style.display = 'none'
@@ -40,6 +41,23 @@ function go() {
       voiceWhite.style.display = 'block'
     }
   })
+}
+function cakes() {
+  let startsContainer = document.createElement('div')
+  startsContainer.className = 'startsContainer'
+  for (let i = 0; i < 30; i++) {
+    let img = document.createElement('img')
+    let src = require('../images/cake.png')
+    img.setAttribute('src', src)
+    img.setAttribute('class', 'stars')
+    startsContainer.appendChild(img)
+  }
+  document.body.appendChild(startsContainer)
+  let els = document.querySelectorAll('.startsContainer')
+  let current = els.length
+  if (current > 5) {
+    els[0].remove()
+  }
 }
 export {
   go

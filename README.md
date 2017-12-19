@@ -14,4 +14,6 @@ Refer to: <a href="https://github.com/hackerzhou/Love">hackerzhou</a>
 
 ## TODO
 
-* rewrite type-writer
+* 重写 type-writer
+* 生日模式写得比较急，代码需要整理
+* 生日模式改成农历
