@@ -7,8 +7,8 @@
     "server": "export NODE_ENV=dev && webpack-dev-server --open",
     "build": "export NODE_ENV=pro && webpack"
   },
-  "author": "xmflswood",
-  "license": "MIT",
+  "author": "darranshi",
+  "license": ".",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
