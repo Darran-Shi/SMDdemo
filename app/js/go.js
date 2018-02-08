@@ -13,7 +13,7 @@
       .type('/**', '<span class="note">')
       .type('0', '<br>')
       .type('00', '<span class="blank">')
-      .type('今天wood先生教你写代码呀', '<span class="note">')
+      .type('wood先生教你写代', '<span class="note">')
       .type('0', '<br>')
       .type('00', '<span class="blank">')
       .wait(10)
@@ -22,7 +22,7 @@
       .type('么么哒~o(*≧▽≦)ツ', '<span class="note">', 0)
       .wait(10)
       .then(() => {
-        memeda()
+        //memeda()
        })
       .wait(25)
       .type('0', '<br>')
