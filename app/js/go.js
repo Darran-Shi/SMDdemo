@@ -19,7 +19,7 @@
       .wait(10)
       .type('等下。。。', '<span class="note">') 
       .wait(10)
-      .type('么么哒~o(*≧▽≦)ツ', '<span class="note">', 0)
+      .type('么么', '<span class="note">', 0)
       .wait(10)
       .then(() => {
         //memeda()
@@ -55,7 +55,7 @@
       .type("'wood'", '<span class="green">')
       .wait(15)
       .del(6)
-      .type("'洪榕森'", '<span class="green">')
+      .type("'洪'", '<span class="green">')
       .type(',', '<span class="gray">')
       .type('0', '<br>')
       // 珊珊
@@ -264,7 +264,7 @@
     let comment = document.createElement('div')
     comment.className = 'comment'
     comment.style.bottom = 80 + comentsLength * 55 + 'px'
-    comment.innerHTML = '我想你了'
+    comment.innerHTML = '了'
     document.body.appendChild(comment)
     
     document.body.appendChild(startsContainer)
